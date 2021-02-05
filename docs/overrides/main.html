@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block announce %}
+  <style>
+
+    /* Preserve link color */
+    .md-announce a,
+    .md-announce a:focus,
+    .md-announce a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .md-announce h2 {
+      display: block;
+      font-size: 1.5em;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: 800;
+    }
+
+
+    /* Don't wrap name of blog article */
+    .announce strong {
+      white-space: nowrap;
+    }
+  </style>
+  <div><h2>V2 Launch of Valuts is Live!</h2></div>
+  Get started today with Decentralized Finance <a href="https://yearn.finance">
+  <p></p>
+{% endblock %}
